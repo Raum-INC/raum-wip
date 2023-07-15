@@ -28,7 +28,6 @@ const Waitlist = () => {
                 name="FNAME"
                 placeholder="First Name"
                 id="mce-FNAME"
-                value=""
                 className="bg-transparent outline-none text-lg font-normal text-[#666] p-2 border-b-[1px] border-b-[#777] md:w-[532px]"
               />
               <input
@@ -36,7 +35,6 @@ const Waitlist = () => {
                 placeholder="Last Name"
                 name="LNAME"
                 id="mce-LNAME"
-                value=""
                 className="bg-transparent outline-none text-lg font-normal text-[#666] p-2 border-b-[1px] border-b-[#777] md:w-[532px]"
               />
             </div>
@@ -45,7 +43,6 @@ const Waitlist = () => {
               name="EMAIL"
               id="mce-EMAIL"
               required=""
-              value=""
               placeholder="Email"
               className="bg-transparent outline-none w-full text-lg font-normal text-[#666] p-2 border-b-[1px] border-b-[#777]"
             />
