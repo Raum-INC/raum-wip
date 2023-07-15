@@ -1,20 +1,20 @@
 import React from "react";
-import headerImg from "../assets/under_construction.png";
+import headerImg from "../assets/under_construction.svg";
 
 const Header = () => {
   return (
-    <div className="w-full h-screen py-10 flex flex-col gap-5 md:flex-row md:max-w-[1267px] mx-auto justify-center items-center">
-      <div className="w-4/5 md:w-1/2 flex justify-center">
+    <div className="w-full m-5 py-10 flex flex-col gap-5 lg:flex-row lg:max-w-[1267px] mx-auto justify-center items-center">
+      <div className="m-4 w-4/5 lg:w-1/2 flex justify-center">
         <img src={headerImg} alt="under_construction_img" className="w-4/5" />
       </div>
 
-      <div className="md:w-1/2 flex flex-col gap-[18px] justify-center items-center p-4">
-        <h1 className="font-semibold text-4xl md:text-6xl md:leading-[68px] text-center md:text-left">
+      <div className="lg:w-1/2 flex flex-col gap-[18px] justify-center items-center p-4">
+        <h1 className="font-semibold text-3xl lg:text-6xl lg:leading-[68px] text-center lg:text-left">
           <span className="text-[#0000FF]">Raum</span> is currently
-          <br className="hidden md:block" /> under construction.
+          <br /> under construction.
         </h1>
 
-        <p className="font-[400] text-base md:text-lg leading-6 p-4">
+        <p className="font-[400] text-base lg:text-lg leading-6 p-4">
           We're hard at work to bring you an extraordinary online experience.
           Raum is undergoing a transformation to deliver a dynamic platform that
           revolutionizes the housing industry.

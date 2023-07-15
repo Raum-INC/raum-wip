@@ -1,5 +1,5 @@
 import React from "react";
-import logo from "../assets/raum_logo.png";
+import logo from "../assets/raum_logo.svg";
 import { siteLinks } from "./links";
 
 const Footer = () => {
@@ -9,7 +9,7 @@ const Footer = () => {
         <div>
           <img src={logo} alt="" />
         </div>
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-2 md:gap-x-12 gap-y-8">
+        <div className="grid grid-cols-2 gap-2 md:gap-x-12 gap-y-8">
           {siteLinks.map((siteLink, index) => (
             <div
               key={index}
@@ -33,11 +33,11 @@ const Footer = () => {
           ))}
         </div>
       </div>
-      <div className="w-full h-[115px] border-t-[1px] border-t-[#0000ff33] mt-6 py-3 text-[#585858] text-center text-sm md:text-xl font-normal leading-6">
+      {/* <div className="w-full h-[115px] border-t-[1px] border-t-[#0000ff33] mt-6 py-3 text-[#585858] text-center text-sm md:text-xl font-normal leading-6">
         Copyright © 2023 Raum. All rights reserved.
         <br className="md:hidden" /> Privacy Policy | Terms of Service | Contact
         Us
-      </div>
+      </div> */}
     </>
   );
 };
