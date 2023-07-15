@@ -10,11 +10,12 @@ const Header = () => {
 
       <div className="lg:w-1/2 flex flex-col gap-[18px] justify-center items-center p-4">
         <h1 className="font-semibold text-3xl lg:text-6xl lg:leading-[68px] text-center lg:text-left">
-          <span className="text-[#0000FF]">Raum</span> is currently
+          <span className="text-[#0000FF] lg:animate-pulse">Raum</span> is
+          currently
           <br /> under construction.
         </h1>
 
-        <p className="font-[400] text-base lg:text-lg leading-6 p-4">
+        <p className="font-[400] text-base text-justify lg:text-lg leading-6 p-4">
           We're hard at work to bring you an extraordinary online experience.
           Raum is undergoing a transformation to deliver a dynamic platform that
           revolutionizes the housing industry.
