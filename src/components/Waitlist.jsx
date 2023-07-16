@@ -1,6 +1,30 @@
-import React from "react";
+import * as e from "express";
+import React, { useState } from "react";
+import axios from "axios";
 
 const Waitlist = () => {
+  const [firstName, setFirstName] = useState("");
+  const [lastName, setLastName] = useState("");
+  const [email, setEmail] = useState("");
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+
+    try {
+      const response = await axios.post(
+        "https://gmail.us13.list-manage.com/subscribe/post?u=946cfc9cb47b3cdfcec580292&amp;id=e2b8a86ef0&amp;f_id=00228ae5f0",
+        {
+          firstName: firstName,
+          lastName: lastName,
+          email: email,
+        }
+      );
+      console.log("Dude it worked:", response.data);
+    } catch (error) {
+      console.log("E no work o:", error);
+    }
+  };
+
   return (
     <div className="w-full flex flex-col justify-center items-center m-4 mx-auto py-0 lg:py-20 gap-16">
       <div className="flex flex-col gap-6 md:gap-11">
@@ -14,7 +38,7 @@ const Waitlist = () => {
       </div>
       <div className="w-full" id="mc_embed_signup">
         <form
-          action="https://gmail.us13.list-manage.com/subscribe/post?u=946cfc9cb47b3cdfcec580292&amp;id=e2b8a86ef0&amp;f_id=00228ae5f0"
+          onSubmit={handleSubmit}
           method="post"
           id="mc-embedded-subscribe-form"
           name="mc-embedded-subscribe-form"
@@ -26,6 +50,8 @@ const Waitlist = () => {
               <input
                 type="text"
                 name="FNAME"
+                value={firstName}
+                onChange={(e) => setFirstName(e.target.value)}
                 placeholder="First Name"
                 id="mce-FNAME"
                 className="bg-transparent outline-none text-lg font-normal text-[#666] p-2 border-b-[1px] border-b-[#777] md:w-[532px]"
@@ -34,6 +60,8 @@ const Waitlist = () => {
                 type="text"
                 placeholder="Last Name"
                 name="LNAME"
+                value={lastName}
+                onChange={(e) => setLastName(e.target.value)}
                 id="mce-LNAME"
                 className="bg-transparent outline-none text-lg font-normal text-[#666] p-2 border-b-[1px] border-b-[#777] md:w-[532px]"
               />
@@ -41,6 +69,8 @@ const Waitlist = () => {
             <input
               type="email"
               name="EMAIL"
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
               id="mce-EMAIL"
               required=""
               placeholder="Email"
