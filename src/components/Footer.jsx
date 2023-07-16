@@ -4,13 +4,11 @@ import Assets from "../assets";
 const Footer = () => {
   return (
     <>
-      <div className="w-full mx-auto flex flex-col lg:flex-row md:justify-between gap-y-6 p-8 my-12">
+      <div className="w-full mx-auto flex flex-col lg:flex-row justify-between gap-y-6 p-8 my-12">
         <div>
           <img src={Assets.raumLogo} alt="raum-logo" />
         </div>
-
-        <div className="flex flex-col lg:flex-row gap-6 lg:gap-[290px]">
-          <div className="flex flex-col lg:flex-row gap-6 lg:gap-20">
+<div className="flex flex-col lg:flex-row gap-6 lg:gap-20">
             <div className="flex gap-3">
               <img src={Assets.email} alt="" />
               <div>
@@ -36,6 +34,8 @@ const Footer = () => {
               </div>
             </div>
           </div>
+        <div className="flex flex-col lg:flex-row gap-6 ">
+          
           <div className="text-white flex gap-3 md:gap-8">
             <a href="#">
               <img src={Assets.twitter} alt="" />

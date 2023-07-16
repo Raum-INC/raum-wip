@@ -2,9 +2,9 @@ import React from "react";
 
 const Waitlist = () => {
   return (
-    <div className="w-full flex flex-col justify-center items-center m-4 mx-auto py-20 gap-16 md:gap-28">
+    <div className="w-full flex flex-col justify-center items-center m-4 mx-auto py-0 lg:py-20 gap-16">
       <div className="flex flex-col gap-6 md:gap-11">
-        <h1 className="font-semibold text-3xl md:text-5xl lg:text-8xl md:leading-[108px] text-center">
+        <h1 className="font-semibold text-3xl  lg:text-6xl md:leading-[108px] text-center" style={{lineHeight: "1"}}>
           The Future of
           <br /> Sustainable Living
         </h1>

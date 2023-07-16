@@ -15,7 +15,7 @@ const Header = () => {
           <br /> under construction.
         </h1>
 
-        <p className="font-[400] text-base text-justify lg:text-lg leading-6 p-4">
+        <p className="font-[400] text-base p-4 md:p-0 lg:text-lg leading-6">
           We're hard at work to bring you an extraordinary online experience.
           Raum is undergoing a transformation to deliver a dynamic platform that
           revolutionizes the housing industry.
